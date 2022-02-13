@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://officialpod.netlify.app/sitemap.xml
