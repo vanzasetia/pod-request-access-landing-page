@@ -91,13 +91,13 @@
       content="/favicons/browserconfig.xml"
     />
     <meta name="theme-color" content="#ffffff" />
-    <link rel="stylesheet" href="/" />
-    <script defer src="/"></script>
+    <link rel="stylesheet" href="/css/style.css" />
+    <script defer src="/js/app.js"></script>
     <title>Frontend Mentor | Pod Request Access Landing Page</title>
   </head>
   <body dir="ltr">
     <a href="#main" class="skip-content">Skip to main content.</a>
-    <noscript>
+    <noscript aria-live="polite">
       <p>
         For full functionality of this site it is necessary to enable
         JavaScript.
@@ -113,6 +113,110 @@
         >
       </p>
     </noscript>
-    <main id="main"></main>
+    <div class="container">
+      <header class="header">
+        <a href="/" class="header__home">
+          <img
+            src="/icons/logo.svg"
+            alt="Pod - Home"
+            class="header__logo"
+            width="135"
+            height="56"
+          />
+        </a>
+      </header>
+      <main id="main" class="hero">
+        <h1 class="hero__title">
+          <span class="hero__title--green"
+            >Publish your podcasts</span
+          >
+          everywhere.
+        </h1>
+        <p class="hero__description">
+          Upload your audio to Pod with a single click. We’ll then
+          distribute your podcast to Spotify, Apple Podcasts, Google
+          Podcasts, Pocket Casts and more!
+        </p>
+        <div class="hero__container">
+          <form
+            class="hero__form js-heroForm"
+            name="contact"
+            method="POST"
+            netlify-honeypot="bot-field"
+            data-netlify="true"
+          >
+            <p class="hidden" aria-hidden="true">
+              <label
+                >Don’t fill this out if you’re human:
+                <input name="bot-field"
+              /></label>
+            </p>
+            <div class="hero__form-control">
+              <input
+                type="email"
+                id="heroInput"
+                class="hero__input js-heroInput"
+                name="email"
+                placeholder=" "
+                aria-describedby="heroAlert"
+              />
+              <label for="heroInput" class="hero__label"
+                >Email Address</label
+              >
+              <button class="hero__submit-button" type="submit">
+                Request access
+              </button>
+              <div class="hero__alert-placeholder">
+                <p
+                  id="heroAlert"
+                  class="hero__alert-message js-heroAlert"
+                  hidden
+                >
+                  Oops! Please check your email
+                </p>
+              </div>
+            </div>
+          </form>
+          <ul class="hero__brands">
+            <li class="hero__item">
+              <img
+                src="/icons/spotify.svg"
+                alt="Spotify"
+                class="hero__company"
+                width="96"
+                height="29"
+              />
+            </li>
+            <li class="hero__item">
+              <img
+                src="/icons/apple-podcast.svg"
+                alt="Apple Podcast"
+                class="hero__company"
+                width="78"
+                height="29"
+              />
+            </li>
+            <li class="hero__item">
+              <img
+                src="/icons/google-podcasts.svg"
+                alt="Google Podcasts"
+                class="hero__company"
+                width="125"
+                height="18"
+              />
+            </li>
+            <li class="hero__item">
+              <img
+                src="/icons/pocket-casts.svg"
+                alt="Pocket Casts"
+                class="hero__company"
+                width="129"
+                height="26"
+              />
+            </li>
+          </ul>
+        </div>
+      </main>
+    </div>
   </body>
 </html>
