@@ -1,0 +1,120 @@
+@use "../abstracts" as *;
+
+.hero {
+  text-align: center;
+}
+
+.hero__title {
+  text-transform: uppercase;
+  color: $white;
+  font-size: rem(26);
+}
+
+.hero__title--green {
+  color: $pale-green;
+}
+
+.hero__description {
+  margin: rem(16) 0 rem(33) 0;
+}
+
+.hero__container {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.hero__brands {
+  display: flex;
+  gap: rem(24);
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hero__item {
+  flex-basis: 100%;
+}
+
+.hero__form {
+  position: relative;
+  padding: rem(48) 0;
+}
+
+.hero__form-control {
+  position: relative;
+}
+
+.hero__input {
+  display: block;
+  margin-bottom: rem(16);
+  border: none;
+  border-radius: 2em;
+  background-color: $dark-grayish-blue;
+  padding: rem(9) rem(32);
+  width: 100%;
+  height: rem(46);
+  color: $white;
+  font-size: rem(14);
+  font-weight: 700;
+
+  @include focus-visible($pale-green);
+}
+
+.hero__input:not(:placeholder-shown) ~ .hero__label {
+  top: -#{rem(30)};
+  left: rem(36);
+  opacity: 1;
+}
+
+.hero__label {
+  position: absolute;
+  top: rem(10.8);
+  left: rem(32);
+  opacity: 0.5;
+  color: $white;
+  font-weight: 700;
+
+  @media screen and (prefers-reduced-motion: no-preference) {
+    transition: all 300ms ease-in-out;
+  }
+}
+
+.hero__submit-button {
+  display: block;
+  border: none;
+  border-radius: 2em;
+  background-color: $pale-green;
+  cursor: pointer;
+  padding: rem(9);
+  width: 100%;
+  height: rem(46);
+  color: $very-dark-blue;
+  font-size: rem(14);
+  font-weight: 700;
+
+  @include on-event {
+    background-color: rgb(179, 255, 226);
+  }
+
+  @include focus-visible($pale-green);
+
+  @media screen and (prefers-reduced-motion: no-preference) {
+    transition: background-color 300ms ease-in-out;
+  }
+}
+
+.hero__alert-message {
+  display: inline-block;
+  position: absolute;
+  top: -#{rem(60)};
+  left: 50%;
+  border-radius: 0.5em;
+  background-color: rgb(251, 62, 62);
+  padding: rem(12);
+  width: rem(200);
+  text-align: left;
+  text-align: center;
+  color: $white;
+  font-size: rem(12);
+  font-weight: 700;
+  transform: translateX(-50%);
+}

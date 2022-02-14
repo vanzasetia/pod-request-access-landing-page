@@ -1,0 +1,13 @@
+@use "../abstracts" as *;
+
+.header {
+  display: flex;
+  justify-content: center;
+  padding: rem(64) 0;
+}
+
+.header__home {
+  display: inline-block;
+
+  @include focus-visible($pale-green);
+}
