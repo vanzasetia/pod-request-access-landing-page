@@ -686,7 +686,7 @@ br + br {
 @media screen and (min-width: 73em) {
   .header {
     position: relative;
-    top: -4.21875rem;
+    top: -2.5rem;
   }
 }
 

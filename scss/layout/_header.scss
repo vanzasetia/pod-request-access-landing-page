@@ -12,7 +12,7 @@
 
   @include breakpoint-up("very-small") {
     position: relative;
-    top: -#{rem(67.5)};
+    top: -#{rem(40)};
   }
 }
 
