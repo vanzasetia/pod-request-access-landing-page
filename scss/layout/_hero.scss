@@ -11,8 +11,8 @@
   }
 
   @include breakpoint-up("very-small") {
-    margin-top: 0;
-    padding-top: rem(40);
+    margin-top: rem(80);
+    padding-top: rem(64);
     max-width: rem(723);
   }
 }
