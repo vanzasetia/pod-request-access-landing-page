@@ -12,12 +12,14 @@ $light-grayish-blue: rgb(194, 203, 229);
 // Breakpoints
 // Note: If the user font-size setting is 16px, then this 'em' is equal to this in 'px'
 $breakpoints-up: (
-  "tiny": 46.875em, // => 750px
-  "very-small": 64em, // => 1024px
-  "small": 80em // => 1280px
+  "tiny": 41.875em, // => 670px
+  "very-small": 73em, // => 1168px
+  "small": 84.375em, // => 1350px
+  "medium": 93.75em, // => 1500px
 );
 $breakpoints-down: (
-  "tiny": 46.8125em, // => 749px
-  "very-small": 63.9375em, // => 1023px
-  "small": 79.9375em // => 1279px
+  "tiny": 41.8125em, // => 669px
+  "very-small": 72.9375em, // => 1167px
+  "small": 84.3125em, // => 1349px
+  "medium": 93.6875em, // => 1499px
 );

@@ -66,8 +66,30 @@ body {
     no-repeat center center/cover;
   color: $light-grayish-blue;
   font: 300 #{rem(15)}/ 1.6 "Chivo", sans-serif;
-
   background-blend-mode: multiply;
+
+  @include breakpoint-up("tiny") {
+    background-image: url("../icons/bg-pattern-dots.svg"),
+      url("../images/tablet/image-host.jpg");
+    background-position: bottom left, top right;
+    background-size: initial;
+    padding-bottom: rem(160);
+    font-size: rem(18);
+    background-blend-mode: initial;
+  }
+
+  @include breakpoint-up("very-small") {
+    background: $very-dark-blue;
+    padding: rem(130) 0;
+  }
+
+  @include breakpoint-up("small") {
+    padding: rem(130) 0 rem(130) rem(160);
+  }
+
+  @include breakpoint-up("medium") {
+    padding-right: 0;
+  }
 }
 
 h1 {

@@ -476,6 +476,32 @@ body {
   font: 300 0.9375rem/1.6 "Chivo", sans-serif;
   background-blend-mode: multiply;
 }
+@media screen and (min-width: 41.875em) {
+  body {
+    background-image: url("../icons/bg-pattern-dots.svg"), url("../images/tablet/image-host.jpg");
+    background-position: bottom left, top right;
+    background-size: initial;
+    padding-bottom: 10rem;
+    font-size: 1.125rem;
+    background-blend-mode: initial;
+  }
+}
+@media screen and (min-width: 73em) {
+  body {
+    background: #121725;
+    padding: 8.125rem 0;
+  }
+}
+@media screen and (min-width: 84.375em) {
+  body {
+    padding: 8.125rem 0 8.125rem 10rem;
+  }
+}
+@media screen and (min-width: 93.75em) {
+  body {
+    padding-right: 0;
+  }
+}
 
 h1 {
   line-height: 1.45;
@@ -616,11 +642,52 @@ br + br {
   padding: 1.5rem;
   max-width: 31.25rem;
 }
+@media screen and (min-width: 41.875em) {
+  .container {
+    margin: 0;
+    padding: 3.125rem 2.4375rem;
+    max-width: 39.6875rem;
+  }
+}
+@media screen and (min-width: 73em) {
+  .container {
+    position: relative;
+    background: url("../images/desktop/image-host.jpg") no-repeat top right;
+    padding: 0 0 0 2.4375rem;
+    max-width: 79.6875rem;
+  }
+  .container::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: -2.625rem;
+    background: url("../icons/bg-pattern-dots.svg") no-repeat center center/100%;
+    width: 14.5rem;
+    height: 6.5rem;
+  }
+}
+@media screen and (min-width: 93.75em) {
+  .container {
+    margin: 0 auto;
+  }
+}
 
 .header {
   display: flex;
   justify-content: center;
   padding: 4rem 0;
+}
+@media screen and (min-width: 41.875em) {
+  .header {
+    justify-content: flex-start;
+    padding: 0;
+  }
+}
+@media screen and (min-width: 73em) {
+  .header {
+    position: relative;
+    top: -4.21875rem;
+  }
 }
 
 .header__home {
@@ -634,11 +701,36 @@ br + br {
 .hero {
   text-align: center;
 }
+@media screen and (min-width: 41.875em) {
+  .hero {
+    margin-top: 9.5rem;
+    background-color: #121725;
+    padding-top: 5.8125rem;
+    text-align: left;
+  }
+}
+@media screen and (min-width: 73em) {
+  .hero {
+    margin-top: 0;
+    padding-top: 4.375rem;
+    max-width: 45.1875rem;
+  }
+}
 
 .hero__title {
   text-transform: uppercase;
   color: white;
   font-size: 1.625rem;
+}
+@media screen and (min-width: 41.875em) {
+  .hero__title {
+    font-size: 2.625rem;
+  }
+}
+@media screen and (min-width: 73em) {
+  .hero__title {
+    font-size: 3.25rem;
+  }
 }
 
 .hero__title--green {
@@ -648,10 +740,20 @@ br + br {
 .hero__description {
   margin: 1rem 0 2.0625rem 0;
 }
+@media screen and (min-width: 41.875em) {
+  .hero__description {
+    max-width: 27.8125rem;
+  }
+}
 
 .hero__container {
   display: flex;
   flex-direction: column-reverse;
+}
+@media screen and (min-width: 41.875em) {
+  .hero__container {
+    flex-direction: column;
+  }
 }
 
 .hero__brands {
@@ -660,14 +762,29 @@ br + br {
   align-items: center;
   justify-content: space-between;
 }
+@media screen and (min-width: 41.875em) {
+  .hero__brands {
+    justify-content: flex-start;
+  }
+}
 
 .hero__item {
   flex-basis: 100%;
 }
+@media screen and (min-width: 41.875em) {
+  .hero__item {
+    flex-basis: initial;
+  }
+}
 
 .hero__form {
-  position: relative;
   padding: 3rem 0;
+}
+@media screen and (min-width: 41.875em) {
+  .hero__form {
+    padding: 0.9375rem 0 4rem;
+    max-width: 26.875rem;
+  }
 }
 
 .hero__form-control {
@@ -684,12 +801,22 @@ br + br {
   width: 100%;
   height: 2.875rem;
   color: white;
-  font-size: 0.875rem;
+  font-size: 1rem;
   font-weight: 700;
 }
 .hero__input:focus-visible, .hero__input:focus {
   outline: 0.1875rem dotted #54e6af;
   outline-offset: 0.3125rem;
+}
+@media screen and (min-width: 41.875em) {
+  .hero__input {
+    height: 3.5rem;
+  }
+}
+@media screen and (min-width: 73em) {
+  .hero__input {
+    padding-right: 10.625rem;
+  }
 }
 
 .hero__input:not(:placeholder-shown) ~ .hero__label {
@@ -704,7 +831,13 @@ br + br {
   left: 2rem;
   opacity: 0.5;
   color: white;
+  font-size: 1rem;
   font-weight: 700;
+}
+@media screen and (min-width: 41.875em) {
+  .hero__label {
+    top: 1rem;
+  }
 }
 @media screen and (prefers-reduced-motion: no-preference) {
   .hero__label {
@@ -732,6 +865,16 @@ br + br {
   outline: 0.1875rem dotted #54e6af;
   outline-offset: 0.3125rem;
 }
+@media screen and (min-width: 41.875em) {
+  .hero__submit-button {
+    display: inline-block;
+    position: absolute;
+    top: 0.3125rem;
+    right: 0.3125rem;
+    padding: 0.5625rem 1.6875rem;
+    width: initial;
+  }
+}
 @media screen and (prefers-reduced-motion: no-preference) {
   .hero__submit-button {
     transition: background-color 300ms ease-in-out;
@@ -747,10 +890,22 @@ br + br {
   background-color: #fb3e3e;
   padding: 0.75rem;
   width: 12.5rem;
-  text-align: left;
   text-align: center;
   color: white;
   font-size: 0.75rem;
   font-weight: 700;
   transform: translateX(-50%);
+}
+@media screen and (min-width: 73em) {
+  .hero__alert-message {
+    top: 4rem;
+    left: 2rem;
+    background-color: transparent;
+    padding: 0;
+    width: 100%;
+    text-align: left;
+    color: #fb3e3e;
+    font-size: 0.875rem;
+    transform: translate(0);
+  }
 }

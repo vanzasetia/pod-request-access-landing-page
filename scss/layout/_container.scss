@@ -4,4 +4,33 @@
   margin: 0 auto;
   padding: rem(24);
   max-width: rem(500);
+
+  @include breakpoint-up("tiny") {
+    margin: 0;
+    padding: rem(50) rem(39);
+    max-width: rem(635);
+  }
+
+  @include breakpoint-up("very-small") {
+    position: relative;
+    background: url("../images/desktop/image-host.jpg") no-repeat top
+      right;
+    padding: 0 0 0 rem(39);
+    max-width: rem(1275);
+
+    &::after {
+      content: "";
+      position: absolute;
+      right: 0;
+      bottom: -#{rem(42)};
+      background: url("../icons/bg-pattern-dots.svg") no-repeat center
+        center/100%;
+      width: rem(232);
+      height: rem(104);
+    }
+  }
+
+  @include breakpoint-up("medium") {
+    margin: 0 auto;
+  }
 }

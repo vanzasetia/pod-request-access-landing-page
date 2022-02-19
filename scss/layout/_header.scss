@@ -4,6 +4,16 @@
   display: flex;
   justify-content: center;
   padding: rem(64) 0;
+
+  @include breakpoint-up("tiny") {
+    justify-content: flex-start;
+    padding: 0;
+  }
+
+  @include breakpoint-up("very-small") {
+    position: relative;
+    top: -#{rem(67.5)};
+  }
 }
 
 .header__home {
