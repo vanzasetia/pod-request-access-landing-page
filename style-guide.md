@@ -4,8 +4,8 @@
 
 The screenshots were taken to the following widths:
 
-- Mobile: 375px [(Preview)](./screenshots/mobile-full-size.png)
-- Desktop: 1440px [(Preview)](./screenshots/desktop-full-size.png)
+- Mobile: 375px [(Preview)](./screenshots/mobile-full-size.jpg)
+- Desktop: 1440px [(Preview)](./screenshots/desktop-full-size.jpg)
 
 ## Colors
 
