@@ -30,6 +30,10 @@
     }
   }
 
+  @include breakpoint-up("small") {
+    padding: 0;
+  }
+
   @include breakpoint-up("medium") {
     margin: 0 auto;
   }
