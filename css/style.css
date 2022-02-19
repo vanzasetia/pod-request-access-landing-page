@@ -722,7 +722,7 @@ br + br {
 @media screen and (min-width: 73em) {
   .hero {
     margin-top: 5rem;
-    padding-top: 4rem;
+    padding-top: 3.5rem;
     max-width: 45.1875rem;
   }
 }
