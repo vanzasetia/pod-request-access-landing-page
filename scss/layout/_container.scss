@@ -4,11 +4,13 @@
   margin: 0 auto;
   padding: rem(24);
   max-width: rem(500);
+  overflow: hidden;
 
   @include breakpoint-up("tiny") {
     margin: 0;
     padding: rem(50) rem(39);
     max-width: rem(635);
+    overflow: visible;
   }
 
   @include breakpoint-up("very-small") {

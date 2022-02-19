@@ -646,12 +646,14 @@ br + br {
   margin: 0 auto;
   padding: 1.5rem;
   max-width: 31.25rem;
+  overflow: hidden;
 }
 @media screen and (min-width: 41.875em) {
   .container {
     margin: 0;
     padding: 3.125rem 2.4375rem;
     max-width: 39.6875rem;
+    overflow: visible;
   }
 }
 @media screen and (min-width: 73em) {
