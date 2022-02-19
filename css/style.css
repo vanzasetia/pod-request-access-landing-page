@@ -507,6 +507,11 @@ h1 {
   line-height: 1.45;
   font-weight: 300;
 }
+@media screen and (min-width: 73em) {
+  h1 {
+    line-height: 1.2;
+  }
+}
 
 p {
   font-size: 1em;
@@ -666,6 +671,11 @@ br + br {
     height: 6.5rem;
   }
 }
+@media screen and (min-width: 84.375em) {
+  .container {
+    padding: 0;
+  }
+}
 @media screen and (min-width: 93.75em) {
   .container {
     margin: 0 auto;
@@ -712,7 +722,7 @@ br + br {
 @media screen and (min-width: 73em) {
   .hero {
     margin-top: 0;
-    padding-top: 4.375rem;
+    padding-top: 2.5rem;
     max-width: 45.1875rem;
   }
 }
@@ -730,6 +740,7 @@ br + br {
 @media screen and (min-width: 73em) {
   .hero__title {
     font-size: 3.25rem;
+    margin: 0;
   }
 }
 
