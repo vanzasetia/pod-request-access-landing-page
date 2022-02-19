@@ -28,6 +28,7 @@
 
   @include breakpoint-up("very-small") {
     font-size: rem(52);
+    margin: 0;
   }
 }
 

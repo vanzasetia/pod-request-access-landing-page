@@ -95,6 +95,10 @@ body {
 h1 {
   line-height: 1.45;
   font-weight: 300;
+
+  @include breakpoint-up("very-small") {
+    line-height: 1.2;
+  }
 }
 
 p {
