@@ -529,6 +529,7 @@ noscript {
   width: 17.5rem;
   font-size: 1rem;
   transform: translate(-50%, -50%);
+  color: #111111;
 }
 
 ul {
