@@ -823,12 +823,8 @@ br + br {
 }
 @media screen and (min-width: 41.875em) {
   .hero__input {
-    height: 3.5rem;
-  }
-}
-@media screen and (min-width: 73em) {
-  .hero__input {
     padding-right: 10.625rem;
+    height: 3.5rem;
   }
 }
 

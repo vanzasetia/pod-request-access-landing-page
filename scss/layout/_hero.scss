@@ -101,11 +101,8 @@
   @include focus-visible($pale-green);
 
   @include breakpoint-up("tiny") {
-    height: rem(56);
-  }
-
-  @include breakpoint-up("very-small") {
     padding-right: rem(170);
+    height: rem(56);
   }
 }
 
