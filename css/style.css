@@ -771,13 +771,17 @@ br + br {
 
 .hero__brands {
   display: flex;
-  gap: 1.5rem;
   align-items: center;
   justify-content: space-between;
 }
 @media screen and (min-width: 41.875em) {
   .hero__brands {
     justify-content: flex-start;
+  }
+}
+@supports (gap: 1.5rem) {
+  .hero__brands {
+    gap: 1.5rem;
   }
 }
 
@@ -787,6 +791,15 @@ br + br {
 @media screen and (min-width: 41.875em) {
   .hero__item {
     flex-basis: initial;
+  }
+}
+
+.hero__item:not(:last-child) {
+  margin-right: 1.5rem;
+}
+@supports (gap: 1.5rem) {
+  .hero__item:not(:last-child) {
+    margin-right: 0;
   }
 }
 

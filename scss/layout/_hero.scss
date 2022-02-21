@@ -1,5 +1,7 @@
 @use "../abstracts" as *;
 
+$-hero-brands-gap: rem(24);
+
 .hero {
   text-align: center;
 
@@ -55,12 +57,15 @@
 
 .hero__brands {
   display: flex;
-  gap: rem(24);
   align-items: center;
   justify-content: space-between;
 
   @include breakpoint-up("tiny") {
     justify-content: flex-start;
+  }
+
+  @supports (gap: $-hero-brands-gap) {
+    gap: $-hero-brands-gap;
   }
 }
 
@@ -69,6 +74,14 @@
 
   @include breakpoint-up("tiny") {
     flex-basis: initial;
+  }
+}
+
+.hero__item:not(:last-child) {
+  margin-right: $-hero-brands-gap;
+
+  @supports (gap: $-hero-brands-gap) {
+    margin-right: 0;
   }
 }
 
