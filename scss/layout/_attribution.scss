@@ -1,0 +1,32 @@
+@use "../abstracts" as *;
+
+.attribution {
+  text-align: center;
+  padding-bottom: rem(16);
+
+  @include breakpoint-up("tiny") {
+    position: absolute;
+    bottom: -#{rem(30)};
+    left: rem(39);
+    text-align: left;
+  }
+
+  @include breakpoint-up("very-small") {
+    bottom: -#{rem(80)};
+  }
+
+  @include breakpoint-up("small") {
+    left: 0;
+  }
+}
+
+.attribution__link {
+  color: $pale-green;
+  text-underline-offset: 0.3em;
+
+  @include focus-visible($pale-green);
+
+  @include on-event {
+    text-decoration: none;
+  }
+}

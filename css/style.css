@@ -651,6 +651,7 @@ br + br {
 }
 @media screen and (min-width: 41.875em) {
   .container {
+    position: relative;
     margin: 0;
     padding: 3.125rem 2.4375rem;
     max-width: 39.6875rem;
@@ -659,7 +660,6 @@ br + br {
 }
 @media screen and (min-width: 73em) {
   .container {
-    position: relative;
     background: url("../images/desktop/image-host.jpg") no-repeat top right;
     padding: 0 0 0 2.4375rem;
     max-width: 79.6875rem;
@@ -931,4 +931,39 @@ br + br {
     font-size: 0.875rem;
     transform: translate(0);
   }
+}
+
+.attribution {
+  text-align: center;
+  padding-bottom: 1rem;
+}
+@media screen and (min-width: 41.875em) {
+  .attribution {
+    position: absolute;
+    bottom: -1.875rem;
+    left: 2.4375rem;
+    text-align: left;
+  }
+}
+@media screen and (min-width: 73em) {
+  .attribution {
+    bottom: -5rem;
+  }
+}
+@media screen and (min-width: 84.375em) {
+  .attribution {
+    left: 0;
+  }
+}
+
+.attribution__link {
+  color: #54e6af;
+  text-underline-offset: 0.3em;
+}
+.attribution__link:focus-visible, .attribution__link:focus {
+  outline: 0.1875rem dotted #54e6af;
+  outline-offset: 0.3125rem;
+}
+.attribution__link:hover, .attribution__link:active {
+  text-decoration: none;
 }
