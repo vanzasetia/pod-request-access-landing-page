@@ -4,6 +4,10 @@
   const heroInput = document.querySelector('.js-heroInput');
   const heroAlert = document.querySelector('.js-heroAlert');
 
+  const showForm = () => {
+    heroForm.removeAttribute('hidden');
+  };
+
   const showAlertMessage = alertMessage => {
     heroAlert.textContent = alertMessage;
     heroAlert.removeAttribute('hidden');
@@ -36,5 +40,6 @@
     }
   };
 
+  document.addEventListener('DOMContentLoaded', showForm);
   heroForm.addEventListener('submit', validateEmail);
 })();
