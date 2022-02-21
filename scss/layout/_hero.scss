@@ -22,7 +22,7 @@ $-hero-brands-gap: rem(24);
 .hero__title {
   text-transform: uppercase;
   color: $white;
-  font-size: rem(26);
+  font-size: rem(25);
 
   @include breakpoint-up("tiny") {
     font-size: rem(42);

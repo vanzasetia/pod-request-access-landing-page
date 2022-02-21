@@ -732,7 +732,7 @@ br + br {
 .hero__title {
   text-transform: uppercase;
   color: white;
-  font-size: 1.625rem;
+  font-size: 1.5625rem;
 }
 @media screen and (min-width: 41.875em) {
   .hero__title {
