@@ -7,6 +7,13 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0, viewport-fit=cover"
     />
+    <script
+      async
+      defer
+      data-website-id="ccdd8fa5-cdae-4158-aab7-9cf23c8074bb"
+      data-cache="true"
+      src="https://umami-vanzasetia.herokuapp.com/umami.js"
+    ></script>
     <meta
       name="description"
       content="In this challenge, I build an early access landing page that includes custom form validation."
@@ -92,11 +99,49 @@
     />
     <meta name="theme-color" content="#ffffff" />
     <link rel="stylesheet" href="/css/style.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css"
+    />
     <script defer src="/js/app.min.js"></script>
     <title>Frontend Mentor | Pod Request Access Landing Page</title>
   </head>
   <body dir="ltr">
-    <a href="#main" class="skip-content">Skip to main content.</a>
+    <!-- 
+    The script tags have to live inside the body element
+    in order for the cookie consent pop-up to show
+    -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js"
+      data-cfasync="false"
+    ></script>
+    <script>
+      window.cookieconsent.initialise({
+        palette: {
+          popup: {
+            background: "#000000",
+            text: "#ffffff"
+          },
+          button: {
+            background: "transparent",
+            text: "#54e6af",
+            border: "#54e6af"
+          }
+        },
+        position: "bottom-left",
+        content: {
+          message:
+            "Umami is a website analytics service that is used on this website. It may use cookies to improve the performance of the tracking script. However, it doesn't collect any personal data",
+          link: "View my privacy policy",
+          href: "https://github.com/vanzasetia/meet-landing-page/blob/main/PRIVACY%20POLICY.md"
+        }
+      });
+    </script>
+    <a
+      href="#main"
+      class="skip-content umami--click--skip-to-main-content-link"
+      >Skip to main content.</a
+    >
     <noscript aria-live="polite">
       <p>
         To create an account on Pod, JavaScript is required for the
@@ -115,7 +160,10 @@
     </noscript>
     <div class="container">
       <header class="header">
-        <a href="/" class="header__home">
+        <a
+          href="/"
+          class="header__home umami--click--header-logo-link"
+        >
           <img
             src="/icons/logo.svg"
             alt="Pod - Home"
@@ -139,7 +187,7 @@
         </p>
         <div class="hero__container">
           <form
-            class="hero__form js-heroForm"
+            class="hero__form js-heroForm umami--submit--hero-form"
             name="contact"
             method="POST"
             hidden
@@ -156,15 +204,20 @@
               <input
                 type="email"
                 id="heroInput"
-                class="hero__input js-heroInput"
+                class="hero__input js-heroInput umami--click--hero-input"
                 name="email"
                 placeholder=" "
                 aria-describedby="heroAlert"
               />
-              <label for="heroInput" class="hero__label"
+              <label
+                for="heroInput"
+                class="hero__label umami--click--hero-label"
                 >Email Address</label
               >
-              <button class="hero__submit-button" type="submit">
+              <button
+                class="hero__submit-button umami--click--submit-button"
+                type="submit"
+              >
                 Request access
               </button>
               <div class="hero__alert-placeholder">
@@ -225,7 +278,7 @@
             href="https://www.frontendmentor.io?ref=challenge"
             target="_blank"
             rel="noopener"
-            class="attribution__link open-new-tab-link"
+            class="attribution__link open-new-tab-link umami--click--frontendmentor-attribution-link"
             >Frontend Mentor
             <span class="open-new-tab-link__message"
               >(opens in new tab)</span
@@ -235,7 +288,7 @@
             href="https://github.com/vanzasetia"
             target="_blank"
             rel="noopener"
-            class="attribution__link open-new-tab-link"
+            class="attribution__link open-new-tab-link umami--click--vanzasetia-attribution-link"
             >Vanza Setia
             <span class="open-new-tab-link__message"
               >(opens in new tab)</span
