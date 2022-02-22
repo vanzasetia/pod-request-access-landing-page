@@ -66,7 +66,7 @@ The users should be able to:
 
 ### Screenshots
 
-![Desktop](./screenshots/desktop.jpg)
+![Desktop](./screenshots/desktop-full-size.jpg)
 
 ## My Process
 [(Back to top)](#table-of-contents)
