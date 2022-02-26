@@ -1,8 +1,8 @@
 # Privacy Policy
 
-*Last updated: February 22, 2022*
+*Last updated: February 27, 2022*
 
-I am using [Umami Analytics](https://umami.is/), which is simple, easy to use, self-hosted web analytics. Umami collects only the metrics I care about and everything fits on a single page, I have made my [analytics dashboard](https://umami-vanzasetia.herokuapp.com/share/EnyuqfqO/officialpod) public so that you can see exactly what is being gathered.
+I am using [Umami Analytics](https://umami.is/), which is simple, easy to use, self-hosted web analytics. Umami collects only the metrics I care about and everything fits on a single page, I have made my [analytics dashboard](https://xjuxlfvnicbwmghj6nq9i7nohixy3y.herokuapp.com/share/EnyuqfqO/officialpod) public so that you can see exactly what is being gathered.
 
 ## Why do I collect that information?
 
