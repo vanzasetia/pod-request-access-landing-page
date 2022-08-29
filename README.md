@@ -63,8 +63,6 @@ The users should be able to:
 ### Links
 - [Live Review](https://officialpod.netlify.app/)
 - [Frontend Mentor Solution Page](https://www.frontendmentor.io/solutions/pod-request-access-landing-page-html-css-sass-js-regex-OrtBAEY5n)
-- [Analytics](https://xjuxlfvnicbwmghj6nq9i7nohixy3y.herokuapp.com/share/EnyuqfqO/officialpod)
-- [Privacy Policy](./PRIVACY%20POLICY.md)
 
 ### Screenshots
 
