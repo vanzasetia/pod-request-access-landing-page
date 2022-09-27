@@ -1,8 +1,8 @@
 @use "../abstracts" as *;
 
 .attribution {
-  text-align: center;
   padding-bottom: rem(16);
+  text-align: center;
 
   @include breakpoint-up("tiny") {
     position: absolute;

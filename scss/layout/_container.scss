@@ -21,7 +21,6 @@
     max-width: rem(1275);
 
     &::after {
-      content: "";
       position: absolute;
       right: 0;
       bottom: -#{rem(42)};
@@ -29,6 +28,7 @@
         center/100%;
       width: rem(232);
       height: rem(104);
+      content: "";
     }
   }
 

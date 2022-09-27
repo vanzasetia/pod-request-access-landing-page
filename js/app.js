@@ -1,23 +1,23 @@
 (function () {
-  'use strict';
-  const heroForm = document.querySelector('.js-heroForm');
-  const heroInput = document.querySelector('.js-heroInput');
-  const heroAlert = document.querySelector('.js-heroAlert');
+  "use strict";
+  const heroForm = document.querySelector(".js-heroForm");
+  const heroInput = document.querySelector(".js-heroInput");
+  const heroAlert = document.querySelector(".js-heroAlert");
 
   const showForm = () => {
-    heroForm.removeAttribute('hidden');
+    heroForm.removeAttribute("hidden");
   };
 
   const showAlertMessage = alertMessage => {
     heroAlert.textContent = alertMessage;
-    heroAlert.removeAttribute('hidden');
-    heroAlert.setAttribute('role', 'alert');
+    heroAlert.removeAttribute("hidden");
+    heroAlert.setAttribute("role", "alert");
   };
 
   const hideAlertMessage = () => {
-    heroAlert.textContent = '';
-    heroAlert.setAttribute('hidden', '');
-    heroAlert.removeAttribute('role');
+    heroAlert.textContent = "";
+    heroAlert.setAttribute("hidden", "");
+    heroAlert.removeAttribute("role");
   };
 
   const validateEmail = event => {
@@ -26,8 +26,8 @@
     const isEmailInvalid = !emailValidation.test(heroInput.value);
     const message =
       isEmailInvalid && heroInput.value
-        ? 'Oops! Please check your email'
-        : 'Oops! Please add your email';
+        ? "Oops! Please check your email"
+        : "Oops! Please add your email";
     if (isEmailInvalid) {
       event.preventDefault();
       if (heroInput.value) {
@@ -40,6 +40,6 @@
     }
   };
 
-  document.addEventListener('DOMContentLoaded', showForm);
-  heroForm.addEventListener('submit', validateEmail);
+  document.addEventListener("DOMContentLoaded", showForm);
+  heroForm.addEventListener("submit", validateEmail);
 })();

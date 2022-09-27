@@ -4,23 +4,18 @@
   *,
   *::before,
   *::after {
-    background-attachment: initial !important;
-    transition-delay: 0s !important;
-    transition-duration: 0s !important;
     animation-duration: 1ms !important;
     animation-delay: -1ms !important;
     animation-iteration-count: 1 !important;
+    transition-delay: 0s !important;
+    transition-duration: 0s !important;
+    background-attachment: initial !important;
     scroll-behavior: auto !important;
   }
 }
 
-/** 
- * Making sure it inherits 100% of the 
- * user font size settings 
- */
 html {
   box-sizing: border-box;
-  font-size: 100%;
 }
 
 *,
@@ -49,10 +44,10 @@ html {
  * For more information: https://gist.github.com/ffoodd/000b59f431e3e64e4ce1a24d5bb36034
  */
 .sr-only {
-  position: absolute !important;
-  margin: -1px !important;
   -webkit-clip-path: inset(50%) !important;
+  position: absolute !important;
   clip-path: inset(50%) !important;
+  margin: -1px !important;
   border: 0 !important;
   padding: 0 !important;
   width: 1px !important;
@@ -64,18 +59,18 @@ html {
 body {
   background: $very-dark-blue url("../images/mobile/image-host.jpg")
     no-repeat center center/cover;
+  background-blend-mode: multiply;
   color: $light-grayish-blue;
   font: 300 #{rem(15)}/ 1.6 "Chivo", sans-serif;
-  background-blend-mode: multiply;
 
   @include breakpoint-up("tiny") {
     background-image: url("../icons/bg-pattern-dots.svg"),
       url("../images/tablet/image-host.jpg");
     background-position: bottom left, top right;
     background-size: initial;
+    background-blend-mode: initial;
     padding-bottom: rem(160);
     font-size: rem(18);
-    background-blend-mode: initial;
   }
 
   @include breakpoint-up("very-small") {
@@ -93,8 +88,8 @@ body {
 }
 
 h1 {
-  line-height: 1.45;
   font-weight: 300;
+  line-height: 1.45;
 
   @include breakpoint-up("very-small") {
     line-height: 1.2;
@@ -105,21 +100,6 @@ p {
   font-size: 1em;
 }
 
-noscript {
-  display: block;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  z-index: 99;
-  border-radius: 1em;
-  background-color: rgb(255, 255, 255);
-  padding: rem(20);
-  width: rem(280);
-  color: rgb(17, 17, 17);
-  font-size: rem(16);
-  transform: translate(-50%, -50%);
-}
-
 ul {
   list-style: none;
 }
@@ -128,28 +108,10 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
-  text-align: center;
+  font-weight: 400;
   line-height: 1.6;
   font-family: sans-serif;
-  font-weight: 400;
-}
-
-/**
- * Style Broken Images
- * 
- * Make it looks good even when the image doesn't load
- * Source: https://bitsofco.de/styling-broken-images/
- */
-img::before {
-  content: "We're sorry, the image below is broken.";
-  display: block;
-  margin-bottom: 0.625rem;
-}
-
-img::after {
-  content: "(url: " attr(src) ")";
-  display: block;
-  font-size: 0.75rem;
+  text-align: center;
 }
 
 /** 
@@ -188,82 +150,6 @@ textarea {
  */
 svg path {
   fill: currentColor;
-}
-
-/** 
- * Set "display: none" on Line Breaks 
- * Used as Spacing 
- */
-br + br {
-  display: none;
-}
-
-.skip-content {
-  display: inline-block;
-  position: fixed;
-  top: 3rem;
-  left: 0;
-  z-index: 200;
-  background-color: $dark-grayish-blue;
-  padding: 1em 2em;
-  text-decoration: 0.1em solid;
-  color: $pale-green;
-  font-size: 1.25rem;
-  font-weight: 700;
-  transform: translateX(-200%);
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .skip-content {
-    transition: transform 0.3s ease 0s;
-  }
-}
-
-.skip-content:focus,
-.skip-content:focus-visible {
-  outline: 0.2em dashed $pale-green;
-  outline-offset: 0.25em;
-  transform: translate(0);
-}
-
-.open-new-tab-link {
-  position: relative;
-}
-
-.open-new-tab-link__message {
-  position: absolute;
-  top: 0;
-  left: 0;
-  opacity: 0;
-  -webkit-clip-path: inset(50%);
-  clip-path: inset(50%);
-  border-radius: 2em;
-  background-color: $pale-green;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-  text-align: center;
-  color: $very-dark-blue;
-  font-weight: 700;
-}
-
-@media screen and (prefers-reduced-motion: no-preference) {
-  .open-new-tab-link__message {
-    transition: opacity 300ms ease-in-out;
-  }
-}
-
-.open-new-tab-link:hover .open-new-tab-link__message,
-.open-new-tab-link:active .open-new-tab-link__message,
-.open-new-tab-link:focus .open-new-tab-link__message {
-  display: block;
-  top: -1.75em;
-  left: 1em;
-  opacity: 1;
-  -webkit-clip-path: none;
-  clip-path: none;
-  width: 12em;
-  height: auto;
 }
 
 .hidden {

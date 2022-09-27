@@ -20,17 +20,17 @@ $-hero-brands-gap: rem(24);
 }
 
 .hero__title {
-  text-transform: uppercase;
   color: $white;
   font-size: rem(25);
+  text-transform: uppercase;
 
   @include breakpoint-up("tiny") {
     font-size: rem(42);
   }
 
   @include breakpoint-up("very-small") {
-    font-size: rem(52);
     margin: 0;
+    font-size: rem(52);
   }
 }
 
@@ -57,8 +57,8 @@ $-hero-brands-gap: rem(24);
 
 .hero__brands {
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
 
   @include breakpoint-up("tiny") {
     justify-content: flex-start;
@@ -108,8 +108,8 @@ $-hero-brands-gap: rem(24);
   width: 100%;
   height: rem(46);
   color: $white;
-  font-size: rem(16);
   font-weight: 700;
+  font-size: rem(16);
 
   @include focus-visible($pale-green);
 
@@ -131,8 +131,8 @@ $-hero-brands-gap: rem(24);
   left: rem(32);
   opacity: 0.5;
   color: $white;
-  font-size: rem(16);
   font-weight: 700;
+  font-size: rem(16);
   @include breakpoint-up("tiny") {
     top: rem(16);
   }
@@ -144,16 +144,16 @@ $-hero-brands-gap: rem(24);
 
 .hero__submit-button {
   display: block;
+  cursor: pointer;
   border: none;
   border-radius: 2em;
   background-color: $pale-green;
-  cursor: pointer;
   padding: rem(9);
   width: 100%;
   height: rem(46);
   color: $very-dark-blue;
-  font-size: rem(14);
   font-weight: 700;
+  font-size: rem(14);
 
   @include on-event {
     background-color: rgb(179, 255, 226);
@@ -180,25 +180,25 @@ $-hero-brands-gap: rem(24);
   position: absolute;
   top: -#{rem(60)};
   left: 50%;
+  transform: translateX(-50%);
   border-radius: 0.5em;
   background-color: rgb(251, 62, 62);
   padding: rem(12);
   width: rem(200);
-  text-align: center;
   color: $white;
-  font-size: rem(12);
   font-weight: 700;
-  transform: translateX(-50%);
+  font-size: rem(12);
+  text-align: center;
 
   @include breakpoint-up("very-small") {
     top: rem(64);
     left: rem(32);
+    transform: translate(0);
     background-color: transparent;
     padding: 0;
     width: 100%;
-    text-align: left;
     color: rgb(251, 62, 62);
     font-size: rem(14);
-    transform: translate(0);
+    text-align: left;
   }
 }
