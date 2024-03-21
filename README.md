@@ -1,53 +1,25 @@
 ![It's finally done! Pod request access landing page challenge](./images/banner.jpg)
 
-<p align="left">
-  <a href="https://www.frontendmentor.io/challenges?difficulties=1" target="_blank"><img src="https://img.shields.io/badge/Difficulty-Newbie-14C2C8?style=for-the-badge&logo=frontendmentor" alt="Difficulty"></a>
-  <img alt="Repo size" src="https://img.shields.io/github/repo-size/vanzasetia/pod-request-access-landing-page?style=for-the-badge&logo=github">
-  <a href="https://twitter.com/vanzasetia" target="_blank"><img src="https://img.shields.io/twitter/follow/vanzasetia?logo=twitter&style=for-the-badge" alt="Twitter followers." /></a>
-  <img alt="Last commit" src="https://img.shields.io/github/last-commit/vanzasetia/pod-request-access-landing-page?style=for-the-badge&logo=git">
-  <img alt="Netlify" src="https://img.shields.io/netlify/1a87de1e-4370-4186-b6e6-ef3d04bdd368?style=for-the-badge&logo=netlify">
-  <img alt="License" src="https://img.shields.io/github/license/vanzasetia/pod-request-access-landing-page?color=green&style=for-the-badge&logo=github">
-</p>
-
-<p>
-  <a href="http://jigsaw.w3.org/css-validator/check/referer">
-    <img style="border:0;width:88px;height:31px"
-        src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
-        alt="Valid CSS!" />
-    </a>
-    <a href="https://github.com/standard/semistandard">
-      <img style="border:0;height:31px"
-        src="https://raw.githubusercontent.com/standard/semistandard/master/badge.svg"
-        alt="JavaScript Style Guide" />
-    </a>
-</p>
-
 # Pod Request Access Landing Page
 
-## Table of contents
-- [Overview](#overview)
-  - [Introduction](#introduction)
-  - [The challenge](#the-challenge)
-  - [Links](#links)
-  - [Screenshots](#screenshots)
-- [My process](#my-process)
-  - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
-  - [Useful resources](#useful-resources)
-- [Author](#author)
-- [License](#license)
-- [References](#references)
+## Disclaimer
+
+This project is solely for learning purposes. I take no any responsibility or liability for the accuracy, completeness, or usefulness of any information provided in this project. You should not use it as a reference for creating your project.
+
+I am currently no longer working on this project.
 
 ## Overview
-[(Back to top)](#table-of-contents)
 
 ### Introduction
+
 Welcome to the `README.md` of this repo! The purpose of creating this project is to sharpen my coding skill.
 
 In this file I'm going to tell you everything, starting with the tools that I used, and much more.
 
 That's it for the introduction and **happy reading!**
+
 ### The Challenge
+
 The challenge is to build out this early access landing page and get it looking as close to the design as possible.
 
 The users should be able to:
@@ -61,6 +33,7 @@ The users should be able to:
   - The email is not formatted correctly should show "Oops! Please check your email"
 
 ### Links
+
 - [Live Review](https://officialpod.netlify.app/)
 - [Frontend Mentor Solution Page](https://www.frontendmentor.io/solutions/pod-request-access-landing-page-html-css-sass-js-regex-OrtBAEY5n)
 
@@ -69,9 +42,9 @@ The users should be able to:
 ![Desktop](./screenshots/desktop-full-size.jpg)
 
 ## My Process
-[(Back to top)](#table-of-contents)
 
 ### Built With
+
 - **Following best practices**\* 
 - HTML Semantic Tags
 - [BEM (Block, Element, Modifier)](https://sparkbox.com/foundry/bem_by_example) Class *Naming Convention*
@@ -143,31 +116,15 @@ Normally, I always make the `label` disappear after the user starts typing any t
 Now, it doesn't disappear! 🙌
 
 ![The placeholder is changed to a label after the user start typing the email](./images/pod-request-input-email.png)
+
 ### Useful Resources
-- [RegExr](https://regexr.com/) - It's an online tool that helps me create and learn about Regular Expression. As a result, I can finish this challenge. Recommended for everyone (including beginners) that learn about Regex! 
 
-## Author
-[(Back to top)](#table-of-contents)
-
-- Frontend Mentor - [@vanzasetia](https://frontendmentor.io/profile/vanzasetia)
-- Twitter - [@vanzasetia](https://twitter.com/vanzasetia)
-- Code Newbie - [@vanzasetia](https://community.codenewbie.org/vanzasetia)
-- Want to see me on other platform? [Check my linktree!](https://linktr.ee/vanzasetia)
+[RegExr](https://regexr.com/) - It's an online tool that helps me create and learn about Regular Expression. As a result, I can finish this challenge. Recommended for everyone (including beginners) that learn about Regex! 
 
 ## License
-[(Back to top)](#table-of-contents)
 
->You can check out [the full license](./LICENSE)
-
-This project is licensed under the terms of the MIT license.
-
-For those who are curious, why do I need to license this?
-- First and probably most important, it is free. 😆
-- Second, I checked this [Choose license website](https://choosealicense.com/) to help me chose a license.
-- The last reason, if I don't want to choose a license, then [here's what gonna happen](https://choosealicense.com/no-permission/).
+[MIT](./LICENSE)
 
 ## References
 
-[(Back to top)](#table-of-contents)
-
-> See the [documentation.](./docs/README.md)
+See the [documentation.](./docs/README.md)
